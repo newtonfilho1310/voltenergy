@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>História - VOLT ENERGY</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Theme Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#004f58",
+                        "primary-fixed": "#e3ec00",
+                        "error": "#ffb4ab",
+                        "on-secondary-container": "#0f6d00",
+                        "surface-variant": "#353534",
+                        "on-surface": "#e5e2e1",
+                        "primary": "#ffffff",
+                        "on-surface-variant": "#c9c8ab",
+                        "inverse-surface": "#e5e2e1",
+                        "secondary-fixed-dim": "#2ae500",
+                        "surface": "#131313",
+                        "secondary-fixed": "#79ff5b",
+                        "tertiary-fixed": "#9cf0ff",
+                        "surface-container-lowest": "#0e0e0e",
+                        "tertiary-container": "#9cf0ff",
+                        "on-tertiary-container": "#006f7c",
+                        "on-primary-container": "#646900",
+                        "secondary": "#d7ffc5",
+                        "surface-dim": "#131313",
+                        "background": "#131313",
+                        "on-primary": "#303300",
+                        "outline-variant": "#474832",
+                        "primary-container": "#e3ec00",
+                        "on-background": "#e5e2e1",
+                        "surface-bright": "#393939",
+                        "surface-container-highest": "#353534",
+                        "tertiary-fixed-dim": "#00daf3",
+                        "tertiary": "#ffffff",
+                        "on-primary-fixed": "#1c1d00",
+                        "inverse-on-surface": "#313030",
+                        "surface-tint": "#c7cf00",
+                        "on-error-container": "#ffdad6",
+                        "inverse-primary": "#5e6300",
+                        "on-error": "#690005",
+                        "on-secondary-fixed-variant": "#095300",
+                        "surface-container-low": "#1c1b1b",
+                        "on-tertiary-fixed": "#001f24",
+                        "on-tertiary": "#00363d",
+                        "on-secondary": "#053900",
+                        "surface-container": "#201f1f",
+                        "secondary-container": "#2ff801",
+                        "on-primary-fixed-variant": "#474a00",
+                        "outline": "#929277",
+                        "error-container": "#93000a",
+                        "surface-container-high": "#2a2a2a",
+                        "on-secondary-fixed": "#022100",
+                        "primary-fixed-dim": "#c7cf00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "section-gap": "120px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["anybody"],
+                        "body-lg": ["montserrat"],
+                        "label-caps": ["spaceGrotesk"],
+                        "label-mono": ["spaceGrotesk"],
+                        "headline-md": ["anybody"],
+                        "headline-lg": ["anybody"],
+                        "body-md": ["montserrat"],
+                        "display-xl": ["anybody"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.1", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "label-mono": ["14px", { "lineHeight": "1.0", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "display-xl": ["80px", { "lineHeight": "1.0", "letterSpacing": "-0.04em", "fontWeight": "900" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Custom utilities based on guidelines */
+        .glass-panel {
+            background-color: rgba(26, 26, 26, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .neon-glow {
+            box-shadow: 0 0 25px rgba(227, 236, 0, 0.2);
+        }
+        .neon-glow-hover:hover {
+            box-shadow: 0 0 35px rgba(227, 236, 0, 0.4);
+            transform: translateY(-2px);
+        }
+        .diagonal-cut {
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+        .diagonal-cut-reverse {
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        }
+        .surge-bg {
+            background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(227, 236, 0, 0.03) 10px, rgba(227, 236, 0, 0.03) 20px);
+        }
+        .metallic-text {
+            background: linear-gradient(45deg, #e5e2e1, #929277);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Hide scrollbar for clean look */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0e0e0e; }
+        ::-webkit-scrollbar-thumb { background: #353534; }
+        ::-webkit-scrollbar-thumb:hover { background: #e3ec00; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_0_20px_rgba(227,236,0,0.15)] flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit h-20 transition-all duration-300">
+<a class="font-display-xl text-headline-md tracking-tighter text-primary-fixed italic flex items-center hover:opacity-80 transition-opacity duration-200" href="index.html">
+            VOLT ENERGY
+        </a>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed transition-colors hover:scale-105 duration-300" href="index.html">Home</a>
+<a class="font-label-caps text-label-caps text-primary-fixed border-b-2 border-primary-fixed pb-1" href="nossa-historia.html">História</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed transition-colors hover:scale-105 duration-300" href="sabores.html">Sabores</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed transition-colors hover:scale-105 duration-300" href="beneficios.html">Benefícios</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed transition-colors hover:scale-105 duration-300" href="contato.html">Contato</a>
+</div>
+<button class="hidden md:flex items-center justify-center bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps px-6 py-3 border-2 border-primary-fixed hover:bg-transparent hover:text-primary-fixed transition-all duration-300 neon-glow-hover uppercase tracking-widest font-bold">COMPRAR AGORA</button>
+<button class="md:hidden text-primary-fixed">
+<span class="material-symbols-outlined" style='font-variation-settings: "FILL" 0;'>menu</span>
+</button>
+</nav>
+<!-- Hero / Origin Section -->
+<header class="relative min-h-[921px] flex items-center justify-center diagonal-cut bg-surface-container-lowest pt-20 overflow-hidden">
+<!-- Background Layer -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-surface/80 to-transparent z-10 mix-blend-multiply"></div>
+<img alt="Urban background" class="w-full h-full object-cover opacity-30 grayscale contrast-150" data-alt="A gritty, high-contrast dark urban environment illuminated by sparse, intense neon green lights reflecting off metallic surfaces and wet pavement. The scene captures the raw energy of a midnight metropolis, styled with aggressive glassmorphism elements and deep charcoal shadows, perfectly embodying a high-octane, tech-forward aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlx4mOKrLd6kMojK2USwD8QE5h5R3qXKWX2sSvdlFJXpMSRCVVi0w7nLgLOtsLDDRKXoBXmZcqHB0K2sYZqQn-zkC8EZdnHDJQluH9yXEzi2qy7x-czjxhOdEtPr5-IfkGBWHfDHsup6ldiBSuRkBv_9VfyNswaPWxsj-JojJju5UockZCcbQOOjhT2lMDgARYEKnY7jejiB8omxxLKxILoaoVIA2RJej0OpKK2JwoW_Xw_EvptMRvGUCZS86Io1q0BfYoRq6--HbN"/>
+</div>
+<div class="relative z-10 max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop w-full grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="inline-block px-3 py-1 bg-surface-container border border-primary-fixed/30 w-max text-primary-fixed font-label-caps text-label-caps uppercase tracking-widest backdrop-blur-md">
+                    Gênesis
+                </div>
+<h1 class="font-display-xl text-display-xl text-primary leading-none uppercase italic -ml-1">A FAGULHA <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-fixed to-secondary-fixed">INICIAL</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl border-l-4 border-primary-fixed pl-6 py-2 bg-surface-container/20 backdrop-blur-sm">Nascida no coração do triângulo mineiro, em Araguari-MG. A VOLT ENERGY não foi criada em um laboratório corporativo, mas da necessidade real de manter a mente afiada e o corpo em movimento quando a cidade dorme.</p>
+</div>
+</div>
+<!-- Decorative Surge Lines -->
+<div class="absolute top-0 right-0 w-1/2 h-full surge-bg z-0 opacity-20 pointer-events-none transform skew-x-12"></div>
+</header>
+<!-- Mission / Ecosystem Section -->
+<section class="py-section-gap relative">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="mb-16 flex flex-col md:flex-row justify-between items-end gap-6">
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary uppercase italic">Energia para <span class="text-primary-fixed">Todo Domínio</span></h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 max-w-2xl">Nossa fórmula é projetada para hiper-foco. Não importa a arena, nós entregamos a voltagem necessária para você dominar.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Pillar 1: Estudos -->
+<div class="group relative bg-[#1A1A1A] border-t-2 border-primary-fixed p-8 flex flex-col gap-6 overflow-hidden transition-all duration-300 hover:bg-surface-container neon-glow-hover">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity duration-300 text-primary-fixed transform group-hover:scale-110">
+<span class="material-symbols-outlined" style='font-size: 80px; font-variation-settings: "FILL" 1;'>book_4</span>
+</div>
+<div class="w-12 h-12 bg-surface-container-high flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined" style='font-variation-settings: "FILL" 1;'>lightbulb</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary uppercase mb-2">Estudos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Cognição elevada. Madrugadas adentro com clareza mental absoluta. Sem crash.</p>
+</div>
+</div>
+<!-- Pillar 2: Treinos -->
+<div class="group relative bg-[#1A1A1A] border-t-2 border-secondary-fixed p-8 flex flex-col gap-6 overflow-hidden transition-all duration-300 hover:bg-surface-container shadow-[0_0_15px_rgba(121,255,91,0.05)] hover:shadow-[0_0_25px_rgba(121,255,91,0.15)]">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity duration-300 text-secondary-fixed transform group-hover:scale-110">
+<span class="material-symbols-outlined" style='font-size: 80px; font-variation-settings: "FILL" 1;'>fitness_center</span>
+</div>
+<div class="w-12 h-12 bg-surface-container-high flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined" style='font-variation-settings: "FILL" 1;'>bolt</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary uppercase mb-2">Treinos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Força explosiva e resistência. Ultrapasse seus limites físicos com um pump elétrico.</p>
+</div>
+</div>
+<!-- Pillar 3: Games -->
+<div class="group relative bg-[#1A1A1A] border-t-2 border-tertiary-fixed p-8 flex flex-col gap-6 overflow-hidden transition-all duration-300 hover:bg-surface-container shadow-[0_0_15px_rgba(156,240,255,0.05)] hover:shadow-[0_0_25px_rgba(156,240,255,0.15)] mt-0 lg:mt-8">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity duration-300 text-tertiary-fixed transform group-hover:scale-110">
+<span class="material-symbols-outlined" style='font-size: 80px; font-variation-settings: "FILL" 1;'>sports_esports</span>
+</div>
+<div class="w-12 h-12 bg-surface-container-high flex items-center justify-center text-tertiary-fixed">
+<span class="material-symbols-outlined" style='font-variation-settings: "FILL" 1;'>stadia_controller</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary uppercase mb-2">Games</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Reflexos insanos e visão de túnel. Domine as ranqueadas com tempo de resposta zero.</p>
+</div>
+</div>
+<!-- Pillar 4: Trabalho -->
+<div class="group relative bg-[#1A1A1A] border-t-2 border-primary-fixed p-8 flex flex-col gap-6 overflow-hidden transition-all duration-300 hover:bg-surface-container neon-glow-hover mt-0 lg:mt-8">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity duration-300 text-primary-fixed transform group-hover:scale-110">
+<span class="material-symbols-outlined" style='font-size: 80px; font-variation-settings: "FILL" 1;'>work</span>
+</div>
+<div class="w-12 h-12 bg-surface-container-high flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined" style='font-variation-settings: "FILL" 1;'>terminal</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary uppercase mb-2">Trabalho</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Produtividade letal. Quebre prazos e mantenha a performance executiva no pico absoluto.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Bento Grid -->
+<section class="py-section-gap bg-surface-container-lowest diagonal-cut-reverse relative overflow-hidden">
+<!-- Ambient lighting -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary-fixed/5 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary uppercase italic mb-4">O Código <span class="text-primary-fixed">VOLT</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Pilares inegociáveis que moldam cada lata que produzimos.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-unit">
+<!-- ENERGIA (Large Block) -->
+<div class="md:col-span-2 bg-[#1A1A1A] p-8 relative overflow-hidden group border border-outline-variant/20 hover:border-primary-fixed/50 transition-colors">
+<img alt="Energia" class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-luminosity group-hover:opacity-40 transition-opacity duration-500" data-alt="A dynamic, high-speed abstraction of bright neon yellow and green lightning striking through a dark, textured graphite background. The image evokes extreme kinetic energy, sharp contrasts, and aggressive power, heavily stylized with glassmorphism overlays and intense glowing particles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsj5QYOh1nLYoFbeRh2hLI9wam8Zpwbf0JjDOlTvtroJA0XrwWN3Irhohm6TRbSfCMzQZNgZ9BSBVTALq2uEZ7J0CUBPfw3EXlLZWPyDDG6Be0y5OOXsLzPgZErIMqNCd96r2WDQrj7faWDRlgEhFhhKScLixzPwHNtd_42t9B_ksqW0uDzjT-2T-wlOSWikwKA_0K77fYKA1jlXReGfmOG0-QBUYaRdsmxVCje4PYE2dVUN69BuZywb2s1vEkuaRtUxLrC6mUCsj3"/>
+<div class="relative z-10 h-full flex flex-col justify-end min-h-[250px]">
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps w-max mb-4">01</span>
+<h3 class="font-headline-lg text-headline-lg text-primary uppercase italic mb-2">Energia</h3>
+<p class="font-body-md text-body-md text-on-surface max-w-md">Combustível puro. Nossa formulação é uma carga direta para o sistema nervoso, projetada para ignição imediata.</p>
+</div>
+</div>
+<!-- ATITUDE -->
+<div class="bg-[#1A1A1A] p-8 relative overflow-hidden group border border-outline-variant/20 hover:border-primary-fixed/50 transition-colors">
+<div class="relative z-10 flex flex-col justify-between h-full min-h-[250px]">
+<span class="px-3 py-1 bg-surface-container-high text-primary-fixed font-label-caps text-label-caps w-max">02</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary uppercase italic mb-2">Atitude</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Insubmissa e agressiva. Não seguimos tendências, nós estabelecemos a voltagem do mercado.</p>
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-tl from-primary-fixed/20 to-transparent"></div>
+</div>
+<!-- FOCO -->
+<div class="bg-[#1A1A1A] p-8 relative overflow-hidden group border border-outline-variant/20 hover:border-primary-fixed/50 transition-colors">
+<div class="relative z-10 flex flex-col justify-between h-full min-h-[250px]">
+<span class="px-3 py-1 bg-surface-container-high text-primary-fixed font-label-caps text-label-caps w-max">03</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary uppercase italic mb-2">Foco</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Precisão cirúrgica. Elimine o ruído e mire no objetivo com clareza absoluta.</p>
+</div>
+</div>
+</div>
+<!-- MOVIMENTO -->
+<div class="bg-[#1A1A1A] p-8 relative overflow-hidden group border border-outline-variant/20 hover:border-primary-fixed/50 transition-colors">
+<div class="relative z-10 flex flex-col justify-between h-full min-h-[250px]">
+<span class="px-3 py-1 bg-surface-container-high text-primary-fixed font-label-caps text-label-caps w-max">04</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary uppercase italic mb-2">Movimento</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Estagnação é morte. Impulsionamos a ação constante e a busca incessante por mais.</p>
+</div>
+</div>
+</div>
+<!-- INOVAÇÃO -->
+<div class="bg-[#1A1A1A] p-8 relative overflow-hidden group border border-outline-variant/20 hover:border-primary-fixed/50 transition-colors bg-gradient-to-br from-[#1A1A1A] to-surface-container-highest">
+<div class="relative z-10 flex flex-col justify-between h-full min-h-[250px]">
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps w-max">05</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary uppercase italic mb-2">Inovação</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Hackeando limites. Buscamos as fórmulas mais avançadas para o seu hardware biológico.</p>
+</div>
+</div>
+<!-- Glitch/Tech subtle bg -->
+<div class="absolute inset-0 opacity-10 surge-bg"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-section-gap border-t-4 border-primary-fixed shadow-[0_-10px_30px_rgba(227,236,0,0.1)]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+<div class="md:col-span-1 flex flex-col gap-4">
+<span class="font-display-xl text-headline-lg text-primary-fixed italic tracking-tighter">VOLT ENERGY</span>
+<p class="font-label-mono text-label-mono text-on-surface-variant opacity-50">ARAGUARI - MG</p>
+</div>
+<div class="md:col-span-2 flex flex-col justify-end">
+<div class="flex flex-wrap gap-x-8 gap-y-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-fixed transition-all" href="#">Política de Privacidade</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-fixed transition-all" href="#">Termos de Serviço</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-fixed transition-all" href="#">FAQ</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-fixed transition-all" href="#">Distribuidores</a>
+</div>
+</div>
+<div class="md:col-span-1 flex items-end justify-start md:justify-end mt-8 md:mt-0">
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">© 2024 VOLT ENERGY. LIBERE O SURGE.</p>
+</div>
+</div>
+</footer>
+</body></html>

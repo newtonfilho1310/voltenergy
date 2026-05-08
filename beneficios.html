@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VOLT ENERGY - Benefícios</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#004f58",
+                        "primary-fixed": "#e3ec00",
+                        "error": "#ffb4ab",
+                        "on-secondary-container": "#0f6d00",
+                        "surface-variant": "#353534",
+                        "on-surface": "#e5e2e1",
+                        "primary": "#ffffff",
+                        "on-surface-variant": "#c9c8ab",
+                        "inverse-surface": "#e5e2e1",
+                        "secondary-fixed-dim": "#2ae500",
+                        "surface": "#131313",
+                        "secondary-fixed": "#79ff5b",
+                        "tertiary-fixed": "#9cf0ff",
+                        "surface-container-lowest": "#0e0e0e",
+                        "tertiary-container": "#9cf0ff",
+                        "on-tertiary-container": "#006f7c",
+                        "on-primary-container": "#646900",
+                        "secondary": "#d7ffc5",
+                        "surface-dim": "#131313",
+                        "background": "#131313",
+                        "on-primary": "#303300",
+                        "outline-variant": "#474832",
+                        "primary-container": "#e3ec00",
+                        "on-background": "#e5e2e1",
+                        "surface-bright": "#393939",
+                        "surface-container-highest": "#353534",
+                        "tertiary-fixed-dim": "#00daf3",
+                        "tertiary": "#ffffff",
+                        "on-primary-fixed": "#1c1d00",
+                        "inverse-on-surface": "#313030",
+                        "surface-tint": "#c7cf00",
+                        "on-error-container": "#ffdad6",
+                        "inverse-primary": "#5e6300",
+                        "on-error": "#690005",
+                        "on-secondary-fixed-variant": "#095300",
+                        "surface-container-low": "#1c1b1b",
+                        "on-tertiary-fixed": "#001f24",
+                        "on-tertiary": "#00363d",
+                        "on-secondary": "#053900",
+                        "surface-container": "#201f1f",
+                        "secondary-container": "#2ff801",
+                        "on-primary-fixed-variant": "#474a00",
+                        "outline": "#929277",
+                        "error-container": "#93000a",
+                        "surface-container-high": "#2a2a2a",
+                        "on-secondary-fixed": "#022100",
+                        "primary-fixed-dim": "#c7cf00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "section-gap": "120px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["anybody"],
+                        "body-lg": ["montserrat"],
+                        "label-caps": ["spaceGrotesk"],
+                        "label-mono": ["spaceGrotesk"],
+                        "headline-md": ["anybody"],
+                        "headline-lg": ["anybody"],
+                        "body-md": ["montserrat"],
+                        "display-xl": ["anybody"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.1", "fontWeight": "800"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "label-mono": ["14px", {"lineHeight": "1.0", "fontWeight": "500"}],
+                        "headline-md": ["24px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "display-xl": ["80px", {"lineHeight": "1.0", "letterSpacing": "-0.04em", "fontWeight": "900"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Montserrat', sans-serif; }
+        .glass-hud { background: rgba(26, 26, 26, 0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .neon-surge-bg { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: radial-gradient(circle at 80% 20%, rgba(227, 236, 0, 0.05) 0%, transparent 50%), radial-gradient(circle at 20% 80%, rgba(121, 255, 91, 0.05) 0%, transparent 50%); z-index: -1; pointer-events: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background overflow-x-hidden antialiased">
+<div class="neon-surge-bg"></div>
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_0_20px_rgba(227,236,0,0.15)] flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit h-20">
+<a class="font-display-xl text-headline-md tracking-tighter text-primary-fixed italic" href="index.html">VOLT ENERGY</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed transition-colors hover:scale-105 duration-300" href="index.html">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed transition-colors hover:scale-105 duration-300" href="nossa-historia.html">História</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed transition-colors hover:scale-105 duration-300" href="sabores.html">Sabores</a>
+<a class="font-label-caps text-label-caps text-primary-fixed border-b-2 border-primary-fixed pb-1" href="beneficios.html">Benefícios</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed transition-colors hover:scale-105 duration-300" href="contato.html">Contato</a>
+</nav>
+<button class="bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps px-6 py-3 rounded-none uppercase tracking-widest border-2 border-primary-fixed hover:shadow-[0_0_20px_rgba(227,236,0,0.3)] hover:-translate-y-1 transition-all duration-300">COMPRAR AGORA</button>
+</header>
+<!-- Main Content -->
+<main class="pt-24 pb-section-gap">
+<!-- Hero Section (Diagonal Rule) -->
+<section class="relative w-full overflow-hidden min-h-[614px] flex items-center bg-surface-container-lowest mt-10" style="transform: skewY(-6deg);">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-30 mix-blend-luminosity" data-alt="A dark, high-contrast abstract rendering of electric energy surges cutting through a pitch-black void. Vibrant neon yellow and green sparks fly across the composition in sharp diagonal trajectories. The scene feels aggressive, kinetic, and premium, embodying a raw, hyper-focused cyberpunk aesthetic. The lighting is exclusively from the glowing electric elements against the dark surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCemzbeGOce3fRfub80HiBsTqe8bcInUCzC86EoI56QlYEXf0Rb4MjdPuAeBy-7DJyripuSrr13qV5J7PZMIF0lpue5vSt7-XyYoapP-UsXBB4EqCcfUYj8hIx90snLDIHgLrY5LOwUARFXrHmbHo8hZV3N54IDjaSbSrGSqQrhRn3sKqEjdqzo43hE56Htd0jy1GUB7Y87FoLmtpql3spb7DlTEP2TfO-B0Bq-_D155_HAeduFTAAsdR5wfhm9fQN2JuCkbFjxVn0O"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 container mx-auto px-margin-mobile md:px-margin-desktop py-section-gap" style="transform: skewY(6deg);">
+<div class="max-w-3xl">
+<div class="inline-block bg-primary-fixed/10 text-primary-fixed border border-primary-fixed/30 px-3 py-1 mb-6 font-label-caps text-label-caps backdrop-blur-sm">
+                        PERFORMANCE EXTREMA
+                    </div>
+<h1 class="font-display-xl text-headline-lg-mobile md:text-display-xl text-on-background uppercase tracking-tighter mb-6 leading-none">
+                        Sua mente em <br/><span class="text-primary-fixed italic drop-shadow-[0_0_15px_rgba(227,236,0,0.4)]">alta voltagem</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl border-l-4 border-primary-fixed pl-4 mb-8">
+                        Não é apenas energia. É foco tático, resistência implacável e o poder para dominar qualquer desafio. Projetado para quem exige o máximo.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Benefits Bento Grid -->
+<section class="container mx-auto px-margin-mobile md:px-margin-desktop mt-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface-container-high border-t-4 border-primary-fixed p-8 relative overflow-hidden group hover:shadow-[0_0_30px_rgba(227,236,0,0.15)] transition-all duration-300">
+<div class="absolute -right-10 -top-10 w-32 h-32 bg-primary-fixed/5 rounded-full blur-2xl group-hover:bg-primary-fixed/10 transition-colors duration-500"></div>
+<span class="material-symbols-outlined text-4xl text-primary-fixed mb-6 block" style='font-variation-settings: "FILL" 1;'>bolt</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3 uppercase">Mais energia para o dia</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Sustente seu ritmo do nascer ao pôr do sol. Sem quedas bruscas, apenas um fluxo constante de potência.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-high border-t-4 border-secondary-fixed p-8 relative overflow-hidden group hover:shadow-[0_0_30px_rgba(121,255,91,0.15)] transition-all duration-300 lg:translate-y-8">
+<div class="absolute -right-10 -top-10 w-32 h-32 bg-secondary-fixed/5 rounded-full blur-2xl group-hover:bg-secondary-fixed/10 transition-colors duration-500"></div>
+<span class="material-symbols-outlined text-4xl text-secondary-fixed mb-6 block" style='font-variation-settings: "FILL" 1;'>menu_book</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3 uppercase">Ideal para estudos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Clareza mental cirúrgica. Absorva informações mais rápido e mantenha a concentração nas noites mais longas.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-high border-t-4 border-primary-fixed p-8 relative overflow-hidden group hover:shadow-[0_0_30px_rgba(227,236,0,0.15)] transition-all duration-300">
+<div class="absolute -right-10 -top-10 w-32 h-32 bg-primary-fixed/5 rounded-full blur-2xl group-hover:bg-primary-fixed/10 transition-colors duration-500"></div>
+<span class="material-symbols-outlined text-4xl text-primary-fixed mb-6 block" style='font-variation-settings: "FILL" 1;'>fitness_center</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3 uppercase">Perfeito para treinos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Explosão muscular e resistência estendida. Ultrapasse seus limites físicos com um pump inigualável.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-high border-t-4 border-secondary-fixed p-8 relative overflow-hidden group hover:shadow-[0_0_30px_rgba(121,255,91,0.15)] transition-all duration-300 lg:-translate-y-4">
+<div class="absolute -right-10 -top-10 w-32 h-32 bg-secondary-fixed/5 rounded-full blur-2xl group-hover:bg-secondary-fixed/10 transition-colors duration-500"></div>
+<span class="material-symbols-outlined text-4xl text-secondary-fixed mb-6 block" style='font-variation-settings: "FILL" 1;'>sports_esports</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3 uppercase">Foco para games</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Reflexos afiados e tempo de reação zerado. Entre no flow state e domine o lobby competitivo.</p>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-high border-t-4 border-primary-fixed p-8 relative overflow-hidden group hover:shadow-[0_0_30px_rgba(227,236,0,0.15)] transition-all duration-300 lg:translate-y-4">
+<div class="absolute -right-10 -top-10 w-32 h-32 bg-primary-fixed/5 rounded-full blur-2xl group-hover:bg-primary-fixed/10 transition-colors duration-500"></div>
+<span class="material-symbols-outlined text-4xl text-primary-fixed mb-6 block" style='font-variation-settings: "FILL" 1;'>local_fire_department</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3 uppercase">Sabor marcante</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Uma experiência sensorial intensa. Perfis de sabor agressivos que eletrizam o paladar a cada gole.</p>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container-high border-t-4 border-tertiary-fixed p-8 relative overflow-hidden group hover:shadow-[0_0_30px_rgba(156,240,255,0.15)] transition-all duration-300 lg:-translate-y-8">
+<div class="absolute -right-10 -top-10 w-32 h-32 bg-tertiary-fixed/5 rounded-full blur-2xl group-hover:bg-tertiary-fixed/10 transition-colors duration-500"></div>
+<span class="material-symbols-outlined text-4xl text-tertiary-fixed mb-6 block" style='font-variation-settings: "FILL" 1;'>block</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3 uppercase">Opção zero açúcar</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Toda a voltagem, nenhum crash. Performance pura sem calorias vazias para manter o shape em dia.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-section-gap border-t-4 border-primary-fixed shadow-[0_-10px_30px_rgba(227,236,0,0.1)] flat grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop">
+<div class="col-span-1 md:col-span-4 mb-8">
+<span class="font-display-xl text-headline-lg text-primary-fixed italic tracking-tighter">VOLT ENERGY</span>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-8">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-fixed transition-all" href="#">Política de Privacidade</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-fixed transition-all" href="#">Termos de Serviço</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-fixed transition-all" href="#">FAQ</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-fixed transition-all" href="#">Distribuidores</a>
+</div>
+<div class="col-span-1 md:col-span-1 flex items-end md:justify-end mt-8 md:mt-0">
+<p class="font-body-md text-body-md text-primary-fixed">© 2026 VOLT ENERGY. LIBERTE A ENERGIA.</p>
+</div>
+</footer>
+</body></html>

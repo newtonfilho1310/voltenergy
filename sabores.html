@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Volt Energy - Produtos</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#004f58",
+                      "primary-fixed": "#e3ec00",
+                      "error": "#ffb4ab",
+                      "on-secondary-container": "#0f6d00",
+                      "surface-variant": "#353534",
+                      "on-surface": "#e5e2e1",
+                      "primary": "#ffffff",
+                      "on-surface-variant": "#c9c8ab",
+                      "inverse-surface": "#e5e2e1",
+                      "secondary-fixed-dim": "#2ae500",
+                      "surface": "#131313",
+                      "secondary-fixed": "#79ff5b",
+                      "tertiary-fixed": "#9cf0ff",
+                      "surface-container-lowest": "#0e0e0e",
+                      "tertiary-container": "#9cf0ff",
+                      "on-tertiary-container": "#006f7c",
+                      "on-primary-container": "#646900",
+                      "secondary": "#d7ffc5",
+                      "surface-dim": "#131313",
+                      "background": "#131313",
+                      "on-primary": "#303300",
+                      "outline-variant": "#474832",
+                      "primary-container": "#e3ec00",
+                      "on-background": "#e5e2e1",
+                      "surface-bright": "#393939",
+                      "surface-container-highest": "#353534",
+                      "tertiary-fixed-dim": "#00daf3",
+                      "tertiary": "#ffffff",
+                      "on-primary-fixed": "#1c1d00",
+                      "inverse-on-surface": "#313030",
+                      "surface-tint": "#c7cf00",
+                      "on-error-container": "#ffdad6",
+                      "inverse-primary": "#5e6300",
+                      "on-error": "#690005",
+                      "on-secondary-fixed-variant": "#095300",
+                      "surface-container-low": "#1c1b1b",
+                      "on-tertiary-fixed": "#001f24",
+                      "on-tertiary": "#00363d",
+                      "on-secondary": "#053900",
+                      "surface-container": "#201f1f",
+                      "secondary-container": "#2ff801",
+                      "on-primary-fixed-variant": "#474a00",
+                      "outline": "#929277",
+                      "error-container": "#93000a",
+                      "surface-container-high": "#2a2a2a",
+                      "on-secondary-fixed": "#022100",
+                      "primary-fixed-dim": "#c7cf00"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "20px",
+                      "unit": "8px",
+                      "margin-desktop": "64px",
+                      "section-gap": "120px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": [
+                              "anybody"
+                      ],
+                      "body-lg": [
+                              "montserrat"
+                      ],
+                      "label-caps": [
+                              "spaceGrotesk"
+                      ],
+                      "label-mono": [
+                              "spaceGrotesk"
+                      ],
+                      "headline-md": [
+                              "anybody"
+                      ],
+                      "headline-lg": [
+                              "anybody"
+                      ],
+                      "body-md": [
+                              "montserrat"
+                      ],
+                      "display-xl": [
+                              "anybody"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-mono": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-xl": [
+                              "80px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "-0.04em",
+                                      "fontWeight": "900"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .neon-glow-primary {
+            box-shadow: 0 0 20px 0px rgba(227, 236, 0, 0.2);
+        }
+        .neon-glow-primary:hover {
+            box-shadow: 0 0 30px 5px rgba(227, 236, 0, 0.4);
+        }
+        .neon-glow-orange {
+            box-shadow: 0 0 20px 0px rgba(255, 136, 0, 0.2);
+        }
+        .neon-glow-orange:hover {
+            box-shadow: 0 0 30px 5px rgba(255, 136, 0, 0.4);
+        }
+        .neon-glow-blue {
+            box-shadow: 0 0 20px 0px rgba(0, 218, 243, 0.2);
+        }
+        .neon-glow-blue:hover {
+            box-shadow: 0 0 30px 5px rgba(0, 218, 243, 0.4);
+        }
+        .neon-glow-green {
+            box-shadow: 0 0 20px 0px rgba(121, 255, 91, 0.2);
+        }
+        .neon-glow-green:hover {
+            box-shadow: 0 0 30px 5px rgba(121, 255, 91, 0.4);
+        }
+        .neon-glow-gray {
+            box-shadow: 0 0 20px 0px rgba(229, 226, 225, 0.1);
+        }
+        .neon-glow-gray:hover {
+            box-shadow: 0 0 30px 5px rgba(229, 226, 225, 0.2);
+        }
+        
+        .diagonal-bg {
+            background: linear-gradient(174deg, #131313 50%, #1A1A1A 50.1%);
+        }
+
+        .clip-diagonal {
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+      </style>
+</head>
+<body class="bg-background text-on-background min-h-screen overflow-x-hidden antialiased font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="bg-surface/70 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-outline-variant/30 shadow-[0_0_20px_rgba(227,236,0,0.15)] flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit h-20">
+<div class="flex items-center gap-gutter">
+<a class="font-display-xl text-headline-md tracking-tighter text-primary-fixed italic" href="index.html">VOLT ENERGY</a>
+</div>
+<div class="hidden md:flex items-center gap-gutter font-label-caps text-label-caps">
+<a class="text-on-surface-variant hover:text-primary-fixed transition-colors hover:scale-105 duration-300" href="index.html">Home</a>
+<a class="text-on-surface-variant hover:text-primary-fixed transition-colors hover:scale-105 duration-300" href="nossa-historia.html">História</a>
+<a class="text-primary-fixed border-b-2 border-primary-fixed pb-1 hover:scale-105 transition-transform duration-300 opacity-80" href="sabores.html">Sabores</a>
+<a class="text-on-surface-variant hover:text-primary-fixed transition-colors hover:scale-105 duration-300" href="beneficios.html">Benefícios</a>
+<a class="text-on-surface-variant hover:text-primary-fixed transition-colors hover:scale-105 duration-300" href="contato.html">Contato</a>
+</div>
+<div>
+<button class="bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps px-6 py-3 border-2 border-primary-fixed hover:shadow-[0_0_15px_rgba(227,236,0,0.5)] transition-all uppercase tracking-widest relative overflow-hidden group">
+<span class="relative z-10">COMPRAR AGORA</span>
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] skew-x-12"></div>
+</button>
+</div>
+</nav>
+<!-- Header Section -->
+<header class="relative pt-32 pb-24 md:pt-48 md:pb-32 px-margin-mobile md:px-margin-desktop diagonal-bg">
+<div class="max-w-7xl mx-auto relative z-10 text-center">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-display-xl md:text-display-xl text-primary-fixed mb-4 uppercase italic tracking-tighter drop-shadow-[0_0_15px_rgba(227,236,0,0.3)]">
+                Unleash The Surge
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-8">
+                Descubra a linha completa Volt Energy. Fórmulas de alta performance projetadas para foco extremo e energia implacável. Escolha o seu combustível.
+            </p>
+</div>
+<!-- Subtle background speed lines -->
+<div class="absolute inset-0 pointer-events-none overflow-hidden opacity-20">
+<div class="absolute top-1/4 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary-fixed to-transparent rotate-[6deg] transform scale-150"></div>
+<div class="absolute top-2/4 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary-fixed to-transparent rotate-[6deg] transform scale-150"></div>
+<div class="absolute top-3/4 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary-fixed to-transparent rotate-[6deg] transform scale-150"></div>
+</div>
+</header>
+<!-- Products Grid -->
+<main class="py-section-gap px-margin-mobile md:px-margin-desktop bg-background relative z-20 -mt-10 clip-diagonal pb-48">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter lg:gap-12">
+<!-- Volt Original -->
+<article class="bg-[#1A1A1A] border-t-4 border-primary-fixed p-8 flex flex-col items-center text-center relative group transition-transform duration-500 hover:-translate-y-2 neon-glow-primary">
+<div class="absolute inset-0 bg-gradient-to-b from-primary-fixed/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+<div class="relative w-full h-80 mb-6 flex justify-center items-center">
+<img alt="Lata de energético Volt Original preta com detalhes e logo em amarelo neon, fotografada contra um fundo escuro com iluminação dramática que destaca a textura metálica fria." class="h-full object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)] transform group-hover:scale-105 transition-transform duration-500 z-10 mix-blend-lighten" data-alt="A sleek, matte black energy drink can with vibrant neon yellow branding and typography, standing upright against a deep, dramatic pitch-black background. The lighting is high-contrast, edge-lit with a subtle yellow glow on the right side to emphasize the cylindrical metallic shape. The overall mood is intense, high-octane, and premium, perfectly matching a hyper-focused urban aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZD5XK7Bxjqav39Yq2QrHerFoB5vrBlIo-SRKYPTU_pAQaAuSnSAUqhcWoyncDv5DXkkCYKFFTUa01UAupe--5b_2bBbA-_vqbBRrZ3IZorV0U1G8m0bsFr3N-VM1kJo_M_5XACFgZwXO-eldxWjGOiyV5xPJdO169USIi_p30dxqDx6og3c4piAKyDN6oHCxDOn1tGtskl_uO8WPAGQT8at0Ny6sfJPOiPaSH0iX_KygKVhSATe0qvIo9jpLXTvVyMYfNqj5TKFdv"/>
+<!-- Glowing aura behind can -->
+<div class="absolute w-40 h-40 bg-primary-fixed/20 rounded-full blur-3xl group-hover:bg-primary-fixed/30 transition-colors duration-500"></div>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2 uppercase italic">Volt Original</h2>
+<div class="mb-4">
+<span class="inline-block bg-primary-fixed/10 text-primary-fixed font-label-caps text-label-caps px-3 py-1 border border-primary-fixed/30">Carga Máxima</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                        O sabor clássico da energia bruta. Uma explosão cítrica projetada para reações rápidas e foco sustentado.
+                    </p>
+<button class="w-full bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps px-6 py-4 border-2 border-primary-fixed hover:bg-transparent hover:text-primary-fixed transition-colors uppercase tracking-widest relative z-10">
+                        EXPERIMENTAR
+                    </button>
+</article>
+<!-- Volt Tropical -->
+<article class="bg-[#1A1A1A] border-t-4 border-[#FF8800] p-8 flex flex-col items-center text-center relative group transition-transform duration-500 hover:-translate-y-2 neon-glow-orange">
+<div class="absolute inset-0 bg-gradient-to-b from-[#FF8800]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+<div class="relative w-full h-80 mb-6 flex justify-center items-center">
+<img alt="Lata de energético Volt Tropical preta com detalhes e logo em laranja neon, fotografada contra um fundo escuro." class="h-full object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)] transform group-hover:scale-105 transition-transform duration-500 z-10 mix-blend-lighten sepia hue-rotate-[320deg] saturate-200" data-alt="A sleek, matte black energy drink can featuring striking neon orange branding and typography, standing upright against a deep, dramatic pitch-black background. High-contrast edge lighting highlights the metallic texture, with a fiery orange glow reflecting on the right edge. The mood is aggressive, vibrant, and energetic, conveying a premium performance product." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADri314f6DGMJWvgcM9K4kwEGGaqDjQSNJUyCmK9YQy-naL_X_n5-zEr34bs12xfJHiYBchic_lCn_F2-tsFZSCLs-NlWtzdTxMqfzgFHtKjHEjznV3QtLdDgotOeatpALvEfz3i-N9zkvPNlYXPrsYGRuyvJNRe5K5emtmhJCgLC-Hc-8Dio1S3Pxz9ir6LkY8EsmYoLLiqVl1WgGx2OqLqF_QrfN3Ey5QJht5jKfn-Kku83yYqVcpjljVjXZA68sNwZLEgb74g-w"/>
+<!-- Glowing aura behind can -->
+<div class="absolute w-40 h-40 bg-[#FF8800]/20 rounded-full blur-3xl group-hover:bg-[#FF8800]/30 transition-colors duration-500"></div>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2 uppercase italic">Volt Tropical</h2>
+<div class="mb-4">
+<span class="inline-block bg-[#FF8800]/10 text-[#FF8800] font-label-caps text-label-caps px-3 py-1 border border-[#FF8800]/30">Mix de Frutas</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                        Uma tempestade de sabores exóticos. Manga, maracujá e abacaxi fundidos com nossa fórmula de energia.
+                    </p>
+<button class="w-full bg-[#FF8800] text-black font-label-caps text-label-caps px-6 py-4 border-2 border-[#FF8800] hover:bg-transparent hover:text-[#FF8800] transition-colors uppercase tracking-widest relative z-10">
+                        EXPERIMENTAR
+                    </button>
+</article>
+<!-- Volt Zero Açúcar -->
+<article class="bg-[#1A1A1A] border-t-4 border-tertiary-fixed-dim p-8 flex flex-col items-center text-center relative group transition-transform duration-500 hover:-translate-y-2 neon-glow-blue">
+<div class="absolute inset-0 bg-gradient-to-b from-tertiary-fixed-dim/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+<div class="relative w-full h-80 mb-6 flex justify-center items-center">
+<img alt="Lata de energético Volt Zero preta com detalhes e logo em azul neon, fotografada contra um fundo escuro." class="h-full object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)] transform group-hover:scale-105 transition-transform duration-500 z-10 mix-blend-lighten sepia hue-rotate-[180deg] saturate-[3]" data-alt="A sleek, matte black energy drink can featuring piercing electric blue neon branding and typography, standing against a pitch-black background. Cold, high-contrast rim lighting catches the metallic surface, with an icy blue glow subtly reflecting on one side. The composition feels sleek, highly technological, and premium." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWA0B1Z2lPApFAf4hhY0K5tsbBKyYdKDsHHAW_yxrMc26N0jItl5nrpT8ueZlWHaoxoZvGzgCp4AtEOri9Lq92GAvjmGUiRhLCtt99Q1QMELrCQ-iA4Okc6QGLERnWAy48k9VT91bu_bIhXd91K8h2ZW_fWS5ajLiz0u1sZaBcjBB-HMH376he0M11I9ibgvbNKqBcStWnHRMKzO05_2FKv0B3odGcfQz45yCyGwVsO80j6G6GlQzwsrZV-Mq2RjHsei5x8k3cRl-K"/>
+<!-- Glowing aura behind can -->
+<div class="absolute w-40 h-40 bg-tertiary-fixed-dim/20 rounded-full blur-3xl group-hover:bg-tertiary-fixed-dim/30 transition-colors duration-500"></div>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2 uppercase italic">Volt Zero</h2>
+<div class="mb-4">
+<span class="inline-block bg-tertiary-fixed-dim/10 text-tertiary-fixed-dim font-label-caps text-label-caps px-3 py-1 border border-tertiary-fixed-dim/30">Zero Calorias</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                        Energia limpa, zero atrito. O mesmo impacto do original sem uma única grama de açúcar.
+                    </p>
+<button class="w-full bg-tertiary-fixed-dim text-black font-label-caps text-label-caps px-6 py-4 border-2 border-tertiary-fixed-dim hover:bg-transparent hover:text-tertiary-fixed-dim transition-colors uppercase tracking-widest relative z-10">
+                        EXPERIMENTAR
+                    </button>
+</article>
+<!-- Volt Citrus -->
+<article class="bg-[#1A1A1A] border-t-4 border-secondary-fixed p-8 flex flex-col items-center text-center relative group transition-transform duration-500 hover:-translate-y-2 neon-glow-green">
+<div class="absolute inset-0 bg-gradient-to-b from-secondary-fixed/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+<div class="relative w-full h-80 mb-6 flex justify-center items-center">
+<img alt="Lata de energético Volt Citrus preta com detalhes e logo em verde neon, fotografada contra um fundo escuro." class="h-full object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)] transform group-hover:scale-105 transition-transform duration-500 z-10 mix-blend-lighten sepia hue-rotate-[60deg] saturate-[4]" data-alt="A matte black energy drink can featuring toxic neon green branding and typography, isolated against an infinite pitch-black background. Sharp, high-contrast rim lighting defines the can's cylindrical shape, with a glowing green reflection on the right edge. The atmosphere is intense, aggressive, and highly energetic, perfect for an extreme sports aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJIFutuN146bAuU4EBijz_aRHK_TdizJd0XymRoeEBCg82FEVEj2pUmYsSLCeiwqb-I1OqRlKi655SNeHTIE0uG8nsFefh93BlZfnUC-HOg1s9nEVwlkUoV6z3jReOYh0XaQU4NBofjLwEwAn941ZEiagJRjvU04ReZ4yDRuLU-E6-_tYXkRPDKZbecXQqmLGYO4d29PieQcVOrGUhjkgL8AUdZuHKgBEoXBP0uHETV-Vu8IPl0kTLU7398x7T-Z-ZBsNVIJv8wX21"/>
+<!-- Glowing aura behind can -->
+<div class="absolute w-40 h-40 bg-secondary-fixed/20 rounded-full blur-3xl group-hover:bg-secondary-fixed/30 transition-colors duration-500"></div>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2 uppercase italic">Volt Citrus</h2>
+<div class="mb-4">
+<span class="inline-block bg-secondary-fixed/10 text-secondary-fixed font-label-caps text-label-caps px-3 py-1 border border-secondary-fixed/30">Limão &amp; Toranja</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                        Um choque de frescor ácido. Perfeito para reinicializar o sistema em sessões prolongadas.
+                    </p>
+<button class="w-full bg-secondary-fixed text-black font-label-caps text-label-caps px-6 py-4 border-2 border-secondary-fixed hover:bg-transparent hover:text-secondary-fixed transition-colors uppercase tracking-widest relative z-10">
+                        EXPERIMENTAR
+                    </button>
+</article>
+<!-- Volt Black Edition -->
+<article class="bg-[#1A1A1A] border-t-4 border-on-surface p-8 flex flex-col items-center text-center relative group transition-transform duration-500 hover:-translate-y-2 neon-glow-gray md:col-span-2 lg:col-span-1">
+<div class="absolute inset-0 bg-gradient-to-b from-on-surface/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+<div class="relative w-full h-80 mb-6 flex justify-center items-center">
+<img alt="Lata de energético Volt Black Edition totalmente preta com detalhes discretos em cinza e prata, fotografada contra um fundo escuro." class="h-full object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)] transform group-hover:scale-105 transition-transform duration-500 z-10 mix-blend-lighten grayscale brightness-75 contrast-125" data-alt="A completely blackout matte energy drink can with subtle, glossy stealth-gray branding and typography. Set against a pitch-black background, the can is illuminated only by ultra-sharp, thin white edge highlights that outline its metallic form. The mood is stealthy, ultra-premium, and minimalist, conveying raw unadulterated power." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuBbMxJdJcJLG8I23bfCZiY0Cxh5lRq3kqOE5aerJ0Z6Xmn28nC2P3VtdmC9c22EZYuPfgjUCSnwA3-dYAX0kmZBWdNRA3LNzqOdFZ9DEQcKIUvkdi46K6ZgFcL3K06uBGKJ6hLOfrtk4bPa12PhT5MV4jK8SK-2DM8H9f6S2tO8WXgFPP7T3LU6suAaBUrg_eRjOQQ-t2sK5E_Oh5sJUus5jnanMJj2WacT2osRb7X-QYtw88OM5r5ozZ3ETtUbPnizrgG469kk2V"/>
+<!-- Glowing aura behind can -->
+<div class="absolute w-40 h-40 bg-on-surface/10 rounded-full blur-3xl group-hover:bg-on-surface/20 transition-colors duration-500"></div>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2 uppercase italic">Black Edition</h2>
+<div class="mb-4">
+<span class="inline-block bg-surface-variant text-on-surface font-label-caps text-label-caps px-3 py-1 border border-outline/30">Dobro de Cafeína</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                        Para os que operam nas sombras. Carga dupla de estimulantes e nootrópicos para foco absoluto.
+                    </p>
+<button class="w-full bg-on-surface text-surface-container-lowest font-label-caps text-label-caps px-6 py-4 border-2 border-on-surface hover:bg-transparent hover:text-on-surface transition-colors uppercase tracking-widest relative z-10">
+                        EXPERIMENTAR
+                    </button>
+</article>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-section-gap border-t-4 border-primary-fixed shadow-[0_-10px_30px_rgba(227,236,0,0.1)] grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop font-body-md text-body-md text-primary-fixed relative z-30">
+<div class="md:col-span-1 mb-8 md:mb-0">
+<span class="font-display-xl text-headline-lg text-primary-fixed italic block mb-4">VOLT ENERGY</span>
+<p class="text-on-surface-variant text-sm mb-4">LIBERE O IMPULSO.</p>
+<p class="text-on-surface-variant text-xs">© 2024 VOLT ENERGY.</p>
+</div>
+<div class="md:col-span-1 flex flex-col gap-4">
+<h3 class="font-label-caps text-label-caps text-primary-fixed uppercase tracking-widest mb-2">Legal</h3>
+<a class="text-on-surface-variant hover:text-secondary-fixed transition-all" href="#">Política de Privacidade</a>
+<a class="text-on-surface-variant hover:text-secondary-fixed transition-all" href="#">Termos de Serviço</a>
+</div>
+<div class="md:col-span-1 flex flex-col gap-4">
+<h3 class="font-label-caps text-label-caps text-primary-fixed uppercase tracking-widest mb-2">Suporte</h3>
+<a class="text-on-surface-variant hover:text-secondary-fixed transition-all" href="#">FAQ</a>
+<a class="text-on-surface-variant hover:text-secondary-fixed transition-all" href="#">Distribuidores</a>
+</div>
+<div class="md:col-span-1 flex flex-col gap-4">
+<h3 class="font-label-caps text-label-caps text-primary-fixed uppercase tracking-widest mb-2">Siga a Corrente</h3>
+<div class="flex gap-4">
+<a class="w-10 h-10 bg-surface-variant flex items-center justify-center hover:bg-primary-fixed hover:text-black transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-10 h-10 bg-surface-variant flex items-center justify-center hover:bg-primary-fixed hover:text-black transition-colors" href="#">Política de Privacidade</a>
+</div>
+</div>
+</footer>
+</body></html>
